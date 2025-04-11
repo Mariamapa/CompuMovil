@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora de Fórmulas</string>
+    <string name="calcular">Calcular</string>
+    <string name="error_division_cero"> No se puede dividir entre 0</string>
+    <string name="error_multiplicacion_cero"> Base o altura no pueden ser 0</string>
+    <string name="error_campos"> Todos los campos deben tener valores válidos</string>
+    <string name="error_discriminante"> No hay soluciones reales</string>
+    <string name="error_formula_desconocida"> Fórmula desconocida</string>
+    <string name="resultado">Resultado:</string>
+    <string name="formula_desconocida">Fórmula desconocida</string>
+
+    <string name="titulo_area">Área de triángulo</string>
+    <string name="titulo_velocidad">Velocidad</string>
+    <string name="titulo_cuadratica">Ecuación cuadrática</string>
+    <string name="titulo_ohm">Ley de Ohm</string>
+
+    <!-- Opciones del menú -->
+    <string name="formula_area">Área de un triángulo</string>
+    <string name="formula_velocidad">Velocidad media</string>
+    <string name="formula_cuadratica">Ecuación cuadrática</string>
+    <string name="formula_ohm">Ley de Ohm</string>
+    <string name="titulo_default">Fórmula</string>
+    <string name="descripcion_formula">Imagen de la fórmula seleccionada</string>
+
+    <string name="titulo_generico">Fórmula</string>
+    <!-- Campos para cada fórmula -->
+    <string name="hint_base">Base</string>
+    <string name="hint_altura">Altura</string>
+    <string name="hint_distancia">Distancia</string>
+    <string name="hint_tiempo">Tiempo</string>
+    <string name="hint_a"> a</string>
+    <string name="hint_b"> b</string>
+    <string name="hint_c"> c</string>
+    <string name="hint_corriente">Corriente </string>
+    <string name="hint_resistencia">Resistencia </string>
+
+
+</resources>
