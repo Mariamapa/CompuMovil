@@ -44,16 +44,15 @@ class MainActivity : AppCompatActivity() {
             else -> emptyList()
         }
 
-        // Título de la fórmula
         val tituloFormula = TextView(this).apply {
             text = when (idFormula) {
                 0 -> getString(R.string.titulo_area)
                 1 -> getString(R.string.titulo_velocidad)
                 2 -> getString(R.string.titulo_cuadratica)
                 3 -> getString(R.string.titulo_ohm)
-                else -> "Fórmula"
+                else -> getString(R.string.titulo_default)
             }
-            textSize = 20f
+            textSize = resources.getDimension(R.dimen.titulo_formula_text_size) / resources.displayMetrics.scaledDensity
             setTextColor(ContextCompat.getColor(this@MainActivity, android.R.color.black))
             gravity = Gravity.CENTER
             layoutParams = LinearLayout.LayoutParams(
@@ -65,7 +64,6 @@ class MainActivity : AppCompatActivity() {
         }
         inputContainer.addView(tituloFormula)
 
-        // Imagen de la fórmula
         when (idFormula) {
             0 -> imgFormula.setImageResource(R.drawable.formula_triangulo)
             1 -> imgFormula.setImageResource(R.drawable.formula_velocidad)
@@ -73,7 +71,6 @@ class MainActivity : AppCompatActivity() {
             3 -> imgFormula.setImageResource(R.drawable.formula_ohm)
         }
 
-        // Campos de entrada organizados en filas (label + input)
         for (hintResId in hints) {
             val fila = LinearLayout(this).apply {
                 orientation = LinearLayout.HORIZONTAL
@@ -87,7 +84,7 @@ class MainActivity : AppCompatActivity() {
 
             val etiqueta = TextView(this).apply {
                 text = getString(hintResId) + ":"
-                textSize = 18f
+                textSize = resources.getDimension(R.dimen.input_label_text_size) / resources.displayMetrics.scaledDensity
                 setTextColor(ContextCompat.getColor(context, R.color.teal_700))
                 layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
                 gravity = Gravity.END
@@ -95,7 +92,8 @@ class MainActivity : AppCompatActivity() {
 
             val campo = EditText(this).apply {
                 hint = getString(hintResId)
-                inputType = InputType.TYPE_CLASS_NUMBER or InputType.TYPE_NUMBER_FLAG_DECIMAL
+                textSize = resources.getDimension(R.dimen.input_text_size) / resources.displayMetrics.scaledDensity
+                inputType = InputType.TYPE_CLASS_NUMBER or InputType.TYPE_NUMBER_FLAG_DECIMAL or InputType.TYPE_NUMBER_FLAG_SIGNED
                 background = ContextCompat.getDrawable(context, R.drawable.input_background)
                 layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2f).apply {
                     setMargins(16, 0, 0, 0)
@@ -111,6 +109,7 @@ class MainActivity : AppCompatActivity() {
             scrollView.fullScroll(ScrollView.FOCUS_UP)
         }
     }
+
 
     private fun calcularResultado(idFormula: Int) {
         val valores = mutableListOf<Double>()
@@ -129,6 +128,14 @@ class MainActivity : AppCompatActivity() {
                         val valor = texto.toDoubleOrNull()
                         if (valor == null) {
                             Toast.makeText(this, getString(R.string.error_campos), Toast.LENGTH_SHORT).show()
+                            return
+                        }
+                        if (idFormula != 2 && valor == 0.0) {
+                            Toast.makeText(this, getString(R.string.error_cero), Toast.LENGTH_SHORT).show()
+                            return
+                        }
+                        if (idFormula != 2 && valor < 0.0) {
+                            Toast.makeText(this, getString(R.string.error_negativos), Toast.LENGTH_SHORT).show()
                             return
                         }
                         valores.add(valor)
@@ -172,7 +179,6 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
-
             3 -> {
                 val corriente = valores[0]
                 val resistencia = valores[1]

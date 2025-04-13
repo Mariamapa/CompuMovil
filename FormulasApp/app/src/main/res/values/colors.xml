@@ -8,5 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FF5722</color>
+    <color name="verde_resultado">#2E7D32</color>
+    <color name="spinner_text_color">#000000</color>
+    <color name="blanco_spinner">#FFFFFF</color>
+    <color name="acento_spinner">#FF5722</color>
+    <color name="fondo_suave">#F1F8E9</color>
+    <color name="borde_verde_pastel">#81C784</color>
+    <color name="verde_boton">#2E7D32</color>
+
 
 </resources>

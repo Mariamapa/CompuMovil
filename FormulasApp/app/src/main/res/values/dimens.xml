@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Padding general -->
+    <dimen name="padding_main">24dp</dimen>
+    <dimen name="padding_top_main">100dp</dimen>
+    <dimen name="padding_resultado">8dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_top_title">40dp</dimen>
+    <dimen name="margin_bottom_title">16dp</dimen>
+    <dimen name="margin_bottom_image">24dp</dimen>
+    <dimen name="margin_bottom_titulo">24dp</dimen>
+    <dimen name="margin_bottom_input">12dp</dimen>
+    <dimen name="margin_horizontal_input">12dp</dimen>
+    <dimen name="margin_top_btn">16dp</dimen>
+    <dimen name="margin_top_resultado">24dp</dimen>
+
+    <!-- Tamaños de texto -->
+    <dimen name="titulo_formula_text_size">24sp</dimen>
+    <dimen name="titulo_formula_size">20sp</dimen>
+    <dimen name="resultado_text_size">18sp</dimen>
+    <dimen name="input_label_text_size">18sp</dimen>
+    <dimen name="input_text_size">16sp</dimen>
+    <dimen name="input_label_size">16sp</dimen>
+
+    <!-- Botón Calcular -->
+    <dimen name="btn_padding_h">32dp</dimen>
+    <dimen name="btn_padding_v">12dp</dimen>
+    <dimen name="corner_btn">12dp</dimen>
+    <dimen name="padding_btn_h">16dp</dimen>
+    <dimen name="padding_btn_v">8dp</dimen>
+
+    <!-- Imagen de fórmula -->
+    <dimen name="formula_image_width">200dp</dimen>
+    <dimen name="formula_image_height">200dp</dimen>
+
+    <!-- Spinner -->
+    <dimen name="spinner_padding_h">12dp</dimen>
+    <dimen name="spinner_padding_v">8dp</dimen>
+    <dimen name="margin_bottom_spinner">24dp</dimen>
+    <dimen name="spinner_item_padding">12dp</dimen>
+    <dimen name="spinner_text_size">16sp</dimen>
+    <dimen name="spinner_stroke_width">2dp</dimen>
+    <dimen name="spinner_corner_radius">8dp</dimen>
+    <dimen name="spinner_icon_margin">12dp</dimen>
+    <dimen name="stroke_spinner">2dp</dimen>
+    <dimen name="corner_spinner">12dp</dimen>
+    <dimen name="padding_spinner">8dp</dimen>
+    <dimen name="stroke_suave">1.5dp</dimen>
+    <dimen name="corner_radio_grande">16dp</dimen>
+
+
+</resources>

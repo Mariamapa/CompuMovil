@@ -1,6 +1,10 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
-    <solid android:color="#FFFFFF"/>
-    <stroke android:width="2dp" android:color="#FF5722"/>
-    <corners android:radius="12dp"/>
-    <padding android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp"/>
+    <solid android:color="@color/blanco_spinner"/>
+    <stroke android:width="@dimen/stroke_spinner" android:color="@color/acento_spinner"/>
+    <corners android:radius="@dimen/corner_spinner"/>
+    <padding
+        android:left="@dimen/padding_spinner"
+        android:top="@dimen/padding_spinner"
+        android:right="@dimen/padding_spinner"
+        android:bottom="@dimen/padding_spinner"/>
 </shape>
