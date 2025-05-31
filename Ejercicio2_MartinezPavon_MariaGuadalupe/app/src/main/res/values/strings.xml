@@ -1,0 +1,18 @@
+<resources>
+        <string name="app_name">DragonKi</string>
+        <string name="no_characters">No se cargaron personajes.</string>
+        <string name="no_affiliation">Sin afiliación</string>
+        <string name="logo_desc">Logo Dragon Ball Z</string>
+        <string name="desc_back_button">Volver</string>
+        <string name="error_loading">No se pudo cargar la información.</string>
+        <string name="desc_central_gif">GIF central</string>
+        <string name="desc_topright_gif">GIF esquina superior derecha</string>
+        <string name="label_ki">Ki:</string>
+        <string name="label_maxki">MaxKi:</string>
+        <string name="label_affiliation">Afiliación:</string>
+        <string name="label_race">Raza:</string>
+        <string name="label_gender">Género:</string>
+        <string name="no_description">Sin descripción</string>
+        <string name="transformations">Transformaciones:</string>
+        <string name="unknown_placeholder">?</string>
+</resources>
